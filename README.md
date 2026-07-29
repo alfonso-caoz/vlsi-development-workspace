@@ -1,2 +1,3 @@
-# asic-design-pipeline
-ASIC Design Pipeline Project
+# vlsi-development-workspace
+VLSI Development Workspace
+
