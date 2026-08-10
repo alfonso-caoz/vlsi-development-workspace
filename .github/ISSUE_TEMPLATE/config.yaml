@@ -1,0 +1,2 @@
+# Issue Template Configuration
+blank_issues_enabled: false # False: Users cannot create blank issues, they have to use the custom templates.

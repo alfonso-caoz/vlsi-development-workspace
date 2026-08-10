@@ -1,0 +1,41 @@
+name: 🗂️ Management & Planning
+description: Plan milestones, track epics, or request administrative project changes.
+title: "[PLAN]: "
+labels: ["management & planning"]
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Management Category
+      description: What type of administrative task is this?
+      options:
+        - Project Roadmap & Timeline
+        - Epic Tracker Creation and Management
+        - Milestone Planning
+        - Tooling, CI/CD, Dependency Review
+    validations:
+      required: true
+ 
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective & Business Value
+      description: What is the main goal of this initiative and what value does it bring?
+      placeholder: "Example: Define the sprint goals and expected outcomes for the next 2 weeks..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: High-Level Deliverables
+      description: Items or tasks completed?
+      placeholder: "Example: Created next sprint issues url..."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        💡 **Project Manager Note:** Please remember to link this issue to the active **GitHub Project Board / Milestone / Epic**.

@@ -1,0 +1,34 @@
+name: 📝 Documentation Update
+description: Report missing info, correct typos, or suggest a new guide/README expansion.
+title: "[DOCS]: "
+labels: ["documentation"]
+body:
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: Documentation Type
+      description: Select the target medium.
+      options:
+        - Project README / Root Docs
+        - Codebase Comments
+        - Architecture Decision Records (ADR)
+    validations:
+      required: true
+
+  - type: textarea
+    id: gap-analysis
+    attributes:
+      label: Missing or Outdated Information
+      description: Provide a link to the current documentation and explain exactly what is missing or incorrect.
+      placeholder: "Example: The EDA environment setup guidelines are outdated..."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 🛠️ Development Instructions: How to add your changes in the repository, if applicable
+        1. Create a branch from `main` under the branch name format: `docs/<issue-number>-<issue-name-lowercase>`.
+        2. A Pull Request (PR) is required to merge your branch changes to `main`.
+        3. Once your PR is approved and passing all checks, proceed to squash and merge your PR to `main`.

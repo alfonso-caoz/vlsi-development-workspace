@@ -1,0 +1,29 @@
+name: 🚀 Feature Request
+description: Propose a new idea or enhancement.
+title: "[FEAT]: "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem are you trying to solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the changes or features you want to see.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 🛠️ Development Instructions: How to add your changes in the repository, if applicable
+        1. Create a branch from `main` under the branch name format: `feat/<issue-number>-<issue-name-lowercase>`.
+        2. A Pull Request (PR) is required to merge your branch changes to `main`.
+        3. Once your PR is approved and passing all checks, proceed to squash and merge your PR to `main`.
