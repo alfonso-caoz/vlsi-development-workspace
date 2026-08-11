@@ -1,4 +1,3 @@
-# GitHub Branch Ruleset: Main Branch Protection
 {
   "name": "Main Branch Protection",
   "target": "branch",
