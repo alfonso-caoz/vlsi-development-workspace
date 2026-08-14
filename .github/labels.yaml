@@ -1,0 +1,43 @@
+# Labels to assign to issues and pull requests in GitHub.
+- name: "management & planning"
+  color: "53d848"
+  description: Project Management and Planning Tasks
+
+- name: "epic"
+  color: "5427bc"
+  description: Epic Parent Issue
+
+- name: "feature"
+  color: "054877"
+  description: New feature or request
+
+- name: "bug"
+  color: "d73a4a"
+  description: Something isn't working
+
+- name: "documentation"
+  color: "0075ca"
+  description: Improvements or additions to documentation
+
+- name: "config"
+  color: "cd603f"
+  description: GitHub Repository Project Configuration: governance, ci-cd, dx
+- name: "config / governance"
+  color: "cd603f"
+  description: Templates, README, and repo-level rules
+- name: "config /ci-cd"
+  color: "cd603f"
+  description: GitHub Actions and automation pipelines
+- name: "config / dx"
+  color: "cd603f"
+  description: Developer Experience: Linters, formatters, VS Code settings
+
+- name: "sprint summary"
+  color: "9fe834"
+  description: Sprint summary when closing it
+- name: "metrics tracked"
+  color: "9fe834"
+  description: Sprint metrics when closing it
+- name: "agile / scrum"
+  color: "9fe834"
+  description: Agile / Scrum methodology

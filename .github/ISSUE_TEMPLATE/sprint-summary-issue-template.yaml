@@ -1,0 +1,63 @@
+name: 📊 Sprint Summary & Retrospective
+description: Plan, track subproject tasks, and log metrics for a specific sprint.
+title: "📊 [SPRINT X]: Summary & Retrospective"
+labels: ["sprint summary", "metrics tracked", "agile / scrum"]
+body:
+  - type: textarea
+    id: subproject_goals
+    attributes:
+      label: 🎯 Subproject Objectives & Backlog Planning
+      description: What are you aiming to deliver across your apps and packages during this sprint cycle?
+      placeholder: |
+        **Sprint Cycle**: | Sprint Start: MM-DD-YYYY | Sprint End: MM-DD-YYYY |
+        - **Objective 1**: GitHub Action workflow for automated linting PR checking (Issue: #X).
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: ☑️ Issues & Pull Requests Closed
+      description: Link the issues and pull requests that were closed during this sprint.
+      placeholder: |
+        - Issue #X and PR #Y.
+    validations:
+      required: true
+
+  - type: textarea
+    id: personal_metrics
+    attributes:
+      label: 📈 Sprint Performance Metrics
+      description: Fill this out at the end of the sprint with accurate telemetry.
+      placeholder: |
+        *   **Project Management and Agile Velocity**: 
+            *   **Story Points (SP)**: X / X SP Completed (X% Predictability).
+            *   **Task Completion**: X / X Issues Closed (X% Scope Delivery).
+            *   **Epic Contribution**: Epic Issue: #X.
+            *   **Unplanned Scope Injection**: Yes (Issue: #X) / No.
+            **DevOps, Containerization, and Toolchain**
+            *   **A**: 
+        *   **RTL Architecture and Refactoring**:
+            *   **B**: 
+        *   **Verification & Testbench**:
+            *   **C**: 
+        *   **Synthesis & Hardware Performance**:
+            *   **D**: 
+
+  - type: textarea
+    id: retrospective
+    attributes:
+      label: 🔄 Sprint Retrospective & Self-Correction
+      description: Analyze your performance. What went well? What went wrong? How will you fix your process?
+      placeholder: |
+        - **What went well?**: The automated linting PR checking capability was implemented successfully.
+        - **What went wrong?**: Underestimated the EDA Environment configuration time.
+        - **How I will fix it next sprint?**: I will split the configuration tasks into smaller, more manageable pieces.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        💡 **Project Manager Note:** Please remember to link this issue to the active **GitHub Project Board / Milestone / Epic**.

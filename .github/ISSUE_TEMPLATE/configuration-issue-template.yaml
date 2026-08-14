@@ -1,0 +1,44 @@
+name: ⚙️ Configuration & Infrastructure
+description: Request or modify system configurations, CI/CD pipelines, or environment variables.
+title: "[CONFIG]: "
+labels: ["config"]
+body:
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Target Environment
+      description: What is the scope of this change?
+      options:
+        - GitHub Repository - config / governance
+        - Automation Pipelines - config / ci-cd
+        - Developer Experience - config / dx
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current Setup
+      description: Describe the configuration settings as they exist right now.
+      placeholder: "Example: Currently pull requests are being merged with linting errors..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes-required
+    attributes:
+      label: Proposed Modifications
+      description: Provide the exact lines of code, environment variables, or schema updates needed.
+      placeholder: "Example: Add a new GitHub Actions workflow for automated linting checks on pull requests..."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 🛠️ Development Instructions: How to add your changes in the repository, if applicable
+        1. Create a branch from `main` under the branch name format: `config/<issue-number>-<issue-name-lowercase>`.
+        2. A Pull Request (PR) is required to merge your branch changes to `main`.
+        3. Once your PR is approved and passing all checks, proceed to squash and merge your PR to `main`.
+        ⚠️ **Security Guardrail:** Never paste production passwords, API tokens, or raw secrets into this issue template.

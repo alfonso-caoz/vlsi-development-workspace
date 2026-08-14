@@ -1,0 +1,24 @@
+name: ⚔️ Epic
+description: Track a large-scale initiative or user story/issue collection.
+title: "[EPIC X]: "
+labels: ["epic"]
+body:
+  - type: textarea
+    id: overview
+    attributes:
+      label: Executive Summary
+      description: Provide a high-level overview of this epic.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: In Scope / Out of Scope
+      description: Clearly define what is included and excluded.
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        💡 **Project Manager Note:** Please remember to link to this parent issue all the respective child issues (e.g. feature, bug, documentation).
