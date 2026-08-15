@@ -15,10 +15,11 @@ This file covers each `Sprint` **high-level updates**, for more details review t
 - **Objective 3**: Sprint 1: Summary & Retrospective ([#15](https://github.com/alfonso-caoz/vlsi-development-workspace/issues/15)).
 
 ### 📈 Sprint Performance & Metrics
-- **Story Points (SP)**: 9 / 9 SP Completed (100% Predictability).
-- **Task Completion**: 3 / 3 Issues Closed (100% Scope Delivery).
-- **Epic Contribution**: Epic Issue: [#3](https://github.com/alfonso-caoz/vlsi-development-workspace/issues/3).
-- **Unplanned Scope Injection**: Yes ([#14](https://github.com/alfonso-caoz/vlsi-development-workspace/issues/14)).
+- **Project Management and Agile Velocity**:
+    - **Story Points (SP)**: 9 / 9 SP Completed (100% Predictability).
+    - **Task Completion**: 3 / 3 Issues Closed (100% Scope Delivery).
+    - **Epic Contribution**: Epic Issue: [#3](https://github.com/alfonso-caoz/vlsi-development-workspace/issues/3).
+    - **Unplanned Scope Injection**: Yes ([#14](https://github.com/alfonso-caoz/vlsi-development-workspace/issues/14)).
 
 ### 🔄 Sprint Retrospective & Self-Correction
 - **What went well?**: There is a great foundation for the Project Management schema. Now there are Issues and PR's functioning templates, saving time when creating these artifacts.
