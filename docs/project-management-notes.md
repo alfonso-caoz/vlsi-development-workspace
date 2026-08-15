@@ -152,10 +152,15 @@ The following PR templates were created (see also [Branches](#branches) section)
 
 When creating a PR, from the repository GitHub Web UI. Click on `New pull request`, and append manually to the `url` the next keywords depending on the required PR scope:
 
-- `?template=configuration-pr-template.md`
-- `?template=feature-pr-template.md`
-- `?template=bug-fix-pr-template.md`
-- `?template=documentation-pr-template.md`
+- `&template=configuration-pr-template.md`
+- `&template=feature-pr-template.md`
+- `&template=bug-fix-pr-template.md`
+- `&template=documentation-pr-template.md`
+
+**Example**: `https://github.com/alfonso-caoz/vlsi-development-workspace/compare/docs/15-sprint-1-summary-retrospective?expand=1&template=documentation-pr-template.md` and press `Enter`, now the PR description is fill out with your template information.
+
+> [!NOTE]
+> If there is already a `?` in the url, all following commands to be appended should start with `&` (**Example Case**). If not, use `?` for the first keyword set to be appended.
 
 #### Pull Request (PR) Title Convention
 
