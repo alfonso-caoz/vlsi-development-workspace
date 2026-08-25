@@ -1,0 +1,16 @@
+services:
+  eda-env-compose:
+    image: eda-env:v0.1
+    container_name: eda-env-container
+    hostname: eda-env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - .:/vlsi-development-workspace
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+    environment:
+      - DISPLAY=${DISPLAY}
+    stdin_open: true
+    tty: true

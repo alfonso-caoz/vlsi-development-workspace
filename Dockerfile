@@ -55,5 +55,5 @@ RUN python3 -m venv /opt/librelane-env && \
 ENV PATH="/opt/iverilog/bin:/opt/verilator/bin:/opt/librelane-env/bin:${PATH}"
 ENV UVM_HOME="/opt/uvm-verilator"
 
-WORKDIR /eda-env-workspace
+WORKDIR /vlsi-development-workspace
 CMD ["/bin/bash"]
