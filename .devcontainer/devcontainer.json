@@ -1,0 +1,89 @@
+{
+    "name": "EDA Development Environment",
+    "dockerComposeFile": "compose.yaml",
+    "service": "eda-env-compose",
+    "workspaceFolder": "/vlsi-development-workspace",
+    "customizations": {
+        // VS Code Settings, besides the folder ../.vscode (System Settings Are Defined In: Dockerfile and compose.yaml)
+        "vscode": {
+            
+            // Extensions To Install Inside The VS Code Container
+            "extensions": [
+                // Verilog - SystemVerilog
+                "mshr-h.VerilogHDL@1.29.0",                     // (2026-07-12) Verilog-HDL/SystemVerilog
+                // C/C++
+                "ms-vscode.cpptools@1.33.8",                    // (2026-08-17) C/C++
+                "ms-vscode.cpptools-themes@2.0.0",              // (2022-10-24) C/C++ Themes
+                "ms-vscode.cpp-devtools@0.6.18",                // (2026-08-25) C/C++ DevTools
+                "ms-vscode.cmake-tools@1.23.52",                // (2026-08-24) CMake Tools
+                "ms-vscode.makefile-tools@0.12.17",             // (2026-06-18) Makefile Tools
+                "WebFreak.debug@0.27.0",                        // (2024-02-06) Native Debug
+                "mcu-debug.debug-tracker-vscode@0.0.15",        // (2023-03-21) debug-tracker-vscode
+                // Python
+                "ms-python.python@2026.4.0",                    // (2026-08-21) Python
+                "ms-python.vscode-pylance@2026.3.1",            // (2026-08-24) Pylance
+                // GitHub Markdown Preview
+                "bierner.markdown-preview-github-styles@2.2.0", // (2025-06-12) Markdown Preview Github Styling
+                "bierner.markdown-emoji@0.3.1",                 // (2024-12-17) Markdown Emoji
+                "bierner.markdown-checkbox@0.4.0",              // (2022-11-03) Markdown Checkboxes
+                "bierner.markdown-footnotes@0.1.1",             // (2022-11-18) Markdown Footnotes
+                "yahyabatulu.vscode-markdown-alert@0.0.4",      // (2023-11-29) Markdown Preview for Github Alerts
+                // Spell Checking
+                "streetsidesoftware.code-spell-checker@4.5.6"   // (2026-08-24) Code Spell Checker
+            ],
+
+            "settings": {
+                // Disable: Extensions Auto Update, and Telemetry
+                "extensions.autoUpdate": "off",
+                "extensions.autoCheckUpdates": false,
+                "telemetry.telemetryLevel": "off",
+                "telemetry.feedback.enabled": false,
+
+                // C/C++ Environment Configuration
+                "C_Cpp.default.compilerPath": "/usr/bin/g++",
+                "C_Cpp.default.intelliSenseMode": "",           // Empty: Dynamic architecture detection
+                
+                // IntelliSense Detects The C/C++ Standard From A CMake Or Make file, Avoiding to Fix A Standard
+                "cmake.configureOnOpen": true,
+                "makefile.configureOnOpen": true,
+                "makefile.compilerPath": "/usr/bin/g++",
+
+                // Python Environment Configuration
+                "python.defaultInterpreterPath": "/opt/librelane-env/bin/python",
+
+                // Ignore VS Code Host Extension Recommendations (../.vscode/extensions.json)
+                "extensions.ignoreRecommendations": true,
+
+                // Allowed Extensions That Can Be Installed Inside The VS Code Container
+                "extensions.allowed": {
+                    // Verilog - SystemVerilog
+                    "mshr-h.VerilogHDL":                        ["1.29.0"],
+                    // C/C++
+                    "ms-vscode.cpptools":                       ["1.33.8"],
+                    "ms-vscode.cpptools-themes":                ["2.0.0"],
+                    "ms-vscode.cpp-devtools":                   ["0.6.18"],
+                    "ms-vscode.cmake-tools":                    ["1.23.52"],
+                    "ms-vscode.makefile-tools":                 ["0.12.17"],
+                    "WebFreak.debug":                           ["0.27.0"],
+                    "mcu-debug.debug-tracker-vscode":           ["0.0.15"],
+                    // Python
+                    "ms-python.python":                         ["2026.4.0"],
+                    "ms-python.vscode-pylance":                 ["2026.3.1"],
+                    // GitHub Markdown Preview
+                    "bierner.markdown-preview-github-styles":   ["2.2.0"],
+                    "bierner.markdown-emoji":                   ["0.3.1"],
+                    "bierner.markdown-checkbox":                ["0.4.0"],
+                    "bierner.markdown-footnotes":               ["0.1.1"],
+                    "yahyabatulu.vscode-markdown-alert":        ["0.0.4"],
+                    // Spell Checking
+                    "streetsidesoftware.code-spell-checker":    ["4.5.6"],
+                    // No more extensions allowed to be installed
+                    "*": false
+                }
+            }
+        }
+    }//,
+    // Production Execution Only - It blocks Rebuilding
+    // Prevents to Install VS Code extensions via terminal commands
+    //"postCreateCommand": "chmod -R 555 ~/.vscode-server/extensions"
+}

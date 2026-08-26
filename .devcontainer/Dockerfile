@@ -7,12 +7,12 @@ ENV NO_AT_BRIDGE=1
 
 # TOOL PINNED VERSIONS
 ARG DOCKER_CE_CLI_VERSION=5:29.7.2-1~ubuntu.26.04~resolute          # (2026-08-06)
-ARG APT_SNAPSHOT_DATE=20260824T000000Z                              # (2026-08-24 T:00:00:00 Z:UTC)
+ARG APT_SNAPSHOT_DATE=20260825T000000Z                              # (2026-08-25 T:00:00:00 Z:UTC)
 
 ARG PIP_VERSION=26.2.1                                              # (2026-08-04)
 ARG SETUPTOOLS_VERSION=84.0.0                                       # (2026-08-08)
 ARG WHEEL_VERSION=0.48.0                                            # (2026-08-11)
-ARG LIBRELANE_VERSION=3.0.10                                        # (2026-08-15)
+ARG LIBRELANE_VERSION=3.0.11                                        # (2026-08-24)
 
 ARG IVERILOG_COMMIT=dfeee909ed9f20b4870dd93423156c0170c0e1ff        # stable 13.0  (2026-03-01)
 ARG VERILATOR_COMMIT=848d926ebd4addacacd294dc84e35d9d4ae8078c       # v5.050       (2026-07-01)
