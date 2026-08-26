@@ -29,7 +29,7 @@ RUN apt-get update && apt-get install -y ca-certificates curl --no-install-recom
 # 2- Main Toolchains and Runtime Dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     docker-ce-cli=${DOCKER_CE_CLI_VERSION} \
-    build-essential cmake gdb nano git autoconf bison flex libfl-dev perl-doc help2man ccache gperf libreadline-dev \
+    build-essential cmake gdb nano git openssh-client autoconf bison flex libfl-dev perl-doc help2man ccache gperf libreadline-dev \
     python3 python3-pip python3-venv python3-tk python3-dev \
     gtkwave libcanberra-gtk3-module \
     z3 libz3-dev \
