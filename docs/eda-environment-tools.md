@@ -9,7 +9,7 @@ These are the **pinned System Tools** inside the **`eda-env`** at this moment to
 <div align="center">
 
 | System Tool | Repository | Pinned Version | Installation Way | Description |
-| ---  | --- | --- | --- | --- |
+| :---  | :--- | :--- | :--- | :--- |
 | [<sup>*</sup>](#table-note-1) [Ubuntu 26.04 - Resolute](https://hub.docker.com/_/ubuntu/tags?name=26.04) | [Docker Hub](https://hub.docker.com/_/ubuntu) | [`resolute-20260811.1`](https://hub.docker.com/layers/library/ubuntu/resolute-20260811.1/images/sha256:2260313b31c8c011cd2eebe728008efac1b3982be73eb71348ea2648d2c0e09b) | Docker Image | Operating System |
 | <ul><li>[ca-certificates](https://packages.ubuntu.com/resolute/ca-certificates)</li><li>[curl](https://packages.ubuntu.com/resolute/curl)</li></ul> | <ul><li>[Debian Salsa](https://salsa.debian.org/debian/ca-certificates)</li><li>[Debian Salsa](https://salsa.debian.org/debian/curl)</li></ul> | `latest` every new build | APT: Latest | Web Address Tools |
 | [Docker CLI](https://docs.docker.com/engine/) | [Docker Hub](https://hub.docker.com/search?badges=official) | `5:29.7.2-1~ubuntu.26.04~resolute` | APT: Docker Repository | Docker Command Line Interface |
@@ -40,7 +40,7 @@ These are the **pinned VS Code Extensions** inside the **`eda-env`** at this mom
 <div align="center">
 
 | VS Code Extension | Pinned Version | Description |
-| ---  | --- | --- |
+| :---  | :--- | :--- |
 | [Verilog-HDL/SystemVerilog](https://marketplace.visualstudio.com/items?itemName=mshr-h.VerilogHDL) | `1.29.0` | Hardware Description Languages Support |
 | <ul><li>[C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)</li><li>[C/C++ Themes](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-themes)</li><li>[C/C++ DevTools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpp-devtools)</li><li>[CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)</li><li>[Makefile Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.makefile-tools)</li><li>[Native Debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug)</li><li>[debug-tracker-vscode](https://marketplace.visualstudio.com/items?itemName=mcu-debug.debug-tracker-vscode)</li></ul> | <ul><li>`1.33.8`</li><li>`2.0.0`</li><li>`0.6.18`</li><li>`1.23.52`</li><li>`0.12.17`</li><li>`0.27.0`</li><li>`0.0.15`</li></ul> | C/C++ Development Support |
 | <ul><li>[Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)</li><li>[Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)</li></ul> | <ul><li>`2026.4.0`</li><li>`2026.3.1`</li></ul> | Python Development Support |
