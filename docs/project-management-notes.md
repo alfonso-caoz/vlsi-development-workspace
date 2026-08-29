@@ -173,6 +173,6 @@ A reviewed PR will be merged to `main` branch, using the PR title as the last `s
 
 ## Changelog
 
-This changelog file will be updated each time a Sprint is closed, with all tasks, metrics, and retrospective updates. It covers **high-level updates**, for more details review the respective Issue to close the Sprint (see [Board: "Sprints: Summary & Restrospective"](https://github.com/users/alfonso-caoz/projects/4/views/11)).
+This changelog file will be updated each time a Sprint is closed, with all tasks, metrics, and retrospective updates. It covers **high-level updates**, for more details review the respective Issue to close the Sprint (see [Board: "Sprints: Summary & Retrospective"](https://github.com/users/alfonso-caoz/projects/4/views/11)).
 
 - [Changelog](./../CHANGELOG.md)

@@ -27,22 +27,22 @@ body:
   - type: textarea
     id: personal_metrics
     attributes:
-      label: 📈 Sprint Performance Metrics
+      label: 📈 Sprint Performance & Metrics
       description: Fill this out at the end of the sprint with accurate telemetry.
       placeholder: |
-        *   **Project Management and Agile Velocity**: 
-            *   **Story Points (SP)**: X / X SP Completed (X% Predictability).
-            *   **Task Completion**: X / X Issues Closed (X% Scope Delivery).
-            *   **Epic Contribution**: Epic Issue: #X.
-            *   **Unplanned Scope Injection**: Yes (Issue: #X) / No.
-            **DevOps, Containerization, and Toolchain**
-            *   **A**: 
-        *   **RTL Architecture and Refactoring**:
-            *   **B**: 
-        *   **Verification & Testbench**:
-            *   **C**: 
-        *   **Synthesis & Hardware Performance**:
-            *   **D**: 
+        -   **Project Management and Agile Velocity**: 
+            -   **Story Points (SP)**: X / X SP Completed (X% Predictability).
+            -   **Task Completion**: X / X Issues Closed (X% Scope Delivery).
+            -   **Epic Contribution**: Epic Issue: #X.
+            -   **Unplanned Scope Injection**: Yes (Issue: #X) / No.
+        -   **DevOps, Containerization, and Toolchain**
+            -   **A**: 
+        -   **RTL Architecture and Refactoring**:
+            -   **B**: 
+        -   **Verification & Testbench**:
+            -   **C**: 
+        -   **Synthesis & Hardware Performance**:
+            -   **D**: 
 
   - type: textarea
     id: retrospective

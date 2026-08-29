@@ -23,7 +23,7 @@ This closes automatically the issue when this PR is merged.
 <!-- 
 Check this list to see if your PR is well implemented (e.g., - [x] My code...).
 
-When not applicable, put a _N/A_ infront of the check box (e.g., - [ ] _N/A_ My code...).
+When not applicable, put a _N/A_ in front of the check box (e.g., - [ ] _N/A_ My code...).
 -->
 - [ ] My code follows the style guidelines of this project.
 - [ ] I have performed a self-review of my own code.
