@@ -57,7 +57,7 @@ There are two different ways to run this environment, **A** and **B**:
 - Install from the popped up VS Code extension recommendations: [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) and [Container Tools](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-containers)
 - Click on the popped up message `Reopen in Container`, or press `Ctrl` + `Shift` + `P` and select `Dev Container: Reopen in Container`.
 - Wait for the container to build and run (10 - 15 minutes just the first time building the image)
-- Environment ready to use when you see at the lower left corner a blue bar: **`Dev Container: EDA Development Environment`**.
+- Environment ready to use when you see a blue bar at the bottom-left corner: **`Dev Container: EDA Development Environment`**.
 - Close VS Code to close the container.
 - Reopen VS Code to resume your work in the container (seconds, because the image is already built).
 

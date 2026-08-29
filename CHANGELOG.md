@@ -7,6 +7,30 @@ This file covers each `Sprint` **high-level updates**, for more details review t
 
 ---
 
+## [Sprint 2 - Milestone: "Subproject: ASIC Design Pipeline"] - 08-28-2026
+
+### 🎯 Sprint Objectives
+- **Objective 1**: Define EDA Tools And An Initial Dockerfile ([#18](https://github.com/alfonso-caoz/vlsi-development-workspace/issues/18)).
+- **Objective 2**: Sprint 2: Summary & Retrospective ([#17](https://github.com/alfonso-caoz/vlsi-development-workspace/issues/17)).
+
+### 📈 Sprint Performance & Metrics
+-   **Project Management and Agile Velocity**: 
+    -   **Story Points (SP)**: 7 / 7 SP Completed (100% Predictability).
+    -   **Task Completion**: 2 / 2 Issues Closed (100% Scope Delivery).
+    - **Epic Contribution**: Epic Issue: [#4](https://github.com/alfonso-caoz/vlsi-development-workspace/issues/4) and [#3](https://github.com/alfonso-caoz/vlsi-development-workspace/issues/3).
+    -   **Unplanned Scope Injection**: No.
+-   **EDA Environment**: 
+    - **Main EDA Tools**: OS Ubuntu 26.04, GTK Wave, Icarus Verilog, Verilator, UVM Verilator, Constrained Randomization Libraries (z3, libz3-dev), and LibreLane. Additionally: Git, SSH, C/C++ and Python Development Tools.
+    - **Building and Running Time**: 10 - 15 minutes first time building the image. Seconds when just running the container with a prebuilt image.
+    - **Pinned Tools (PT)**: 50 / 52 Tools Pinned (96% PT). System tools: 36, VS Code extensions: 16. Just  2 system tools not pinned because it requires latest to use web addresses: ca-certificate and curl. Low probability to break a tool.
+
+### 🔄 Sprint Retrospective & Self-Correction
+- **What went well?**: There is a stable, replicable, and secure EDA environment to work on subprojects.
+- **What went wrong?**: N/A.
+- **How I will fix it next sprint?**: N/A.
+
+---
+
 ## [Sprint 1 - Milestone: "Subproject: ASIC Design Pipeline"] - 08-14-2026
 
 ### 🎯 Sprint Objectives
