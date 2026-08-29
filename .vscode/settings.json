@@ -4,6 +4,7 @@
         "asic",
         "bierner",
         "dpkg",
+        "gdsii",
         "gperf",
         "gtkwave",
         "iverilog",
@@ -14,6 +15,7 @@
         "librelane",
         "libz3-dev",
         "mshr",
+        "multiplatform",
         "noninteractive",
         "setuptools",
         "testbench",
@@ -21,6 +23,7 @@
         "verilator",
         "verilog",
         "vlsi",
+        "xhost",
         "yahyabatulu"
     ],
 
