@@ -10,13 +10,18 @@ This is the current project folder structure:
 
 ```bash
 vlsi-development-workspace/
+├── .devcontainer/
+│   ├── Dockerfile                              # EDA Environment - Build
+│   ├── compose.yaml                            # EDA Environment - Run
+│   └── devcontainer.json                       # EDA Environment - VS Code + Dev Containers
 ├── .github/
-│   ├── ISSUE_TEMPLATE/               # Folder with Issue templates
-│   ├── PULL_REQUEST_TEMPLATE/        # Folder with PR templates
-│   ├── rulesets/                     # Reference: Folder with rulesets
-│   └── labels.yaml                   # Reference: Project labels
-├── docs/                             # Folder with Project Management documents
-├── subproject-asic-design-pipeline/  # Subproject: ASIC Design Pipeline
+│   ├── ISSUE_TEMPLATE/                         # Folder with Issue templates
+│   ├── PULL_REQUEST_TEMPLATE/                  # Folder with PR templates
+│   ├── rulesets/                               # Reference: Folder with rulesets
+│   └── labels.yaml                             # Reference: Project labels
+├── .vscode/                                    # Folder with VS Code configurations
+├── docs/                                       # Folder with Project Management documents
+├── subproject-aes-128-hardware-accelerator/    # Subproject: AES-128 Hardware Accelerator
 ├── CHANGELOG.md
 └── README.md
 ```

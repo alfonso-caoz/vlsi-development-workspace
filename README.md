@@ -14,7 +14,7 @@ This is the followed project management process based on **Agile/Scrum Developme
 
 ## Subprojects
 
-- [**Subproject: ASIC Design Pipeline**](/subproject-asic-design-pipeline): `Work In Progress`
+- [**Subproject: AES-128 Hardware Accelerator**](/subproject-aes-128-hardware-accelerator): `Ongoing`
 
 
 ## EDA Environment
