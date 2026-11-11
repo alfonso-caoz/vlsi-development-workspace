@@ -1,0 +1,10 @@
+# Documentation dependencies
+
+# Documentation: reST native support -> PDF or HTML generation
+sphinx==9.2.0                   # https://pypi.org/project/Sphinx/
+sphinx-rtd-theme==3.1.0         # Read the Docs Theme. https://pypi.org/project/sphinx-rtd-theme/
+
+# Documentation extension and dependencies for requirements traceability (reST native support, optional Markdown support)
+sphinx-needs==9.2.0             # https://pypi.org/project/sphinx-needs/
+sphinxcontrib-plantuml==0.31    # https://pypi.org/project/sphinxcontrib-plantuml/
+myst-parser==5.1.0              # Markdown support, instead of reStructuredText (reST) for Sphinx. https://pypi.org/project/myst-parser/
