@@ -48,9 +48,25 @@ Clone this repository locally:
 git clone https://github.com/alfonso-caoz/vlsi-development-workspace.git
 ```
 
-There are two different ways to run this environment, **A** and **B**:
+#### Linux Host User Read/Write/Execute Permission From **`eda-env`**
 
-#### A. VS Code + Dev Container (Recommended)
+New files and folders created from the Docker root of **`eda-env`** cannot be accessed from the Linux Host user (**Linux Hosts Only**). Follow next steps to fix this:
+
+- Open a terminal and go to the cloned repository folder:
+    ```bash
+    cd vlsi-development-workspace
+    ```
+
+- Grant your Linux Host user full access to every future file/folder created by **`eda-env`** (Docker root inherits rwx for `$USER`):
+    ```bash
+    setfacl -R -d -m u:$USER:rwx .
+    ```
+
+#### Build And Run The **`eda-env`**
+
+There are two different ways to build and run this environment, **A** and **B**:
+
+##### A. VS Code + Dev Container (Recommended)
 
 - Open **VS Code**
 - Click on: `File` / `Open Folder` / `vlsi-development-workspace` (this cloned repository)
@@ -61,7 +77,7 @@ There are two different ways to run this environment, **A** and **B**:
 - Close VS Code to close the container.
 - Reopen VS Code to resume your work in the container (seconds, because the image is already built).
 
-#### B. Terminal (Optional)
+##### B. Terminal (Optional)
 
 - Open a terminal and go to the cloned repository folder:
     ```bash
