@@ -8,9 +8,9 @@ release = '0.1'
 
 # General Configuration
 extensions = [
-    'sphinx-rtd-theme',         # Read the Docs Theme for Sphinx Documentation
+    'sphinx_rtd_theme',         # Read the Docs Theme for Sphinx Documentation
     'sphinx_needs',             # Sphinx Requirements Traceability Extension. reST Native Support for Documentation
-    'sphinxcontrib-plantuml',   # Sphinx PlantUML Integration
+    'sphinxcontrib.plantuml',   # Sphinx PlantUML Integration
     'myst_parser'               # Markdown Support for Documentation
 ]
 

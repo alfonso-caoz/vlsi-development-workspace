@@ -10,7 +10,7 @@ The unit-level verification will focus on verifying the functionality of individ
 .. unit_test:: Title
    :id: UTEST_AES_001
    :status: Draft
-   :links: FSPEC_AES_XXX
+   :links: FSPEC_AES_001
    :last_updated: 2026-11-06
    :result: UNTESTED
 

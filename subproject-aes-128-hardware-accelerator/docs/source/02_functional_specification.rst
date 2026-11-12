@@ -9,7 +9,7 @@ This document outlines the functional specifications for the AES-128 hardware ac
 .. func_spec:: Title
    :id: FSPEC_AES_001
    :status: Draft
-   :links: REQ_AES_XXX
+   :links: REQ_AES_001
    :last_updated: 2026-11-06
 
    TBD

@@ -2,9 +2,9 @@
    :maxdepth: 2
    :caption: Documentation Contents:
 
-   requirements
-   functional_specification
-   architectural_specification
-   unit_verification
-   uvm_verification
-   traceability_matrix
+   Product Requirements <01_product_requirements_document>
+   Functional Specification <02_functional_specification>
+   Architectural Specification <03_architectural_specification>
+   Unit Level Verification <04_unit_level_verification>
+   UVM Verification <05_uvm_verification>
+   Traceability Matrix <06_traceability_matrix>

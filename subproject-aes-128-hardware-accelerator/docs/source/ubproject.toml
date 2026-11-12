@@ -10,13 +10,15 @@
 [project]
 name = "Subproject: AES-128 Hardware Accelerator"
 description = "Subproject: AES-128 Hardware Accelerator - Requirements and Verification Documentation"
-srcdir = "."
+
+[source]
+dir = "."
 
 
 # ID Generation and Format
 [needs]
 id_required = true
-id_regex = "^[A-Z]{2,5}_AES_[0-9]{3,5}" # AES: Subproject Identifier
+id_regex = "^[A-Z]{2,5}_AES_[0-9]{3,5}$" # AES: Subproject Identifier
 build_json = true                       # Outputs needs.json into the _build directory (e.g. Required for CI/CD or External Tools)
 
 
@@ -64,24 +66,25 @@ default = "Draft"
 
 [needs.fields.last_updated]
 description = "Last Updated REQ/SPEC/TEST Wording (YYYY-MM-DD)"
+default = "YYYY-MM-DD"
 
 [needs.fields.result]
 description = "Test result (UNTESTED, PASSED, FAILED)"
 default = "UNTESTED"
 
 # Traceability Link Types
-[[needs.links]]
+[needs.links.links]
 option = "links"
 incoming = "is linked by"
 outgoing = "links to"
 
-[[needs.links]]
+[needs.links.implements]
 option = "implements"
 incoming = "is implemented by"
 outgoing = "implements"
 style = "#00AA00"
 
-[[needs.links]]
+[needs.links.tests]
 option = "tests"
 incoming = "is tested by"
 outgoing = "tests"
@@ -89,6 +92,7 @@ style = "#0000AA"
 
 
 # Custom Warnings
+[needs.warnings]
 missing_last_update = "last_updated == ''"
 # untested_req = "type == 'req' and len(tests_back) == 0"
 # unimplemented_req = "type == 'req' and len(implements_back) == 0"
