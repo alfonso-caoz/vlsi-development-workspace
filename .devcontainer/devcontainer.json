@@ -29,7 +29,9 @@
                 "bierner.markdown-footnotes@0.1.1",             // (2022-11-18) Markdown Footnotes
                 "yahyabatulu.vscode-markdown-alert@0.0.4",      // (2023-11-29) Markdown Preview for Github Alerts
                 // Spell Checking
-                "streetsidesoftware.code-spell-checker@4.5.6"   // (2026-08-24) Code Spell Checker
+                "streetsidesoftware.code-spell-checker@4.5.6",  // (2026-08-24) Code Spell Checker
+                // Requirements Tools
+                "useblocks.ubcode@0.39.0"                       // (2026-11-04) ubCode
             ],
 
             "settings": {
@@ -77,6 +79,8 @@
                     "yahyabatulu.vscode-markdown-alert":        ["0.0.4"],
                     // Spell Checking
                     "streetsidesoftware.code-spell-checker":    ["4.5.6"],
+                    // Requirements Tools
+                    "useblocks.ubcode":                         ["0.39.0"],
                     // No more extensions allowed to be installed
                     "*": false
                 }

@@ -70,4 +70,7 @@
         }
     },
 
+    // Integrate ubCode CLI With VS Code Terminal
+    "ubcode.cli.terminalIntegration": false,   
+
 }
