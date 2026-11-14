@@ -6,6 +6,9 @@ Architectural Specification (AS)
 
 This document outlines the architectural specifications for the AES-128 hardware accelerator IP core.
 
+Architectural Specifications
+----------------------------
+
 .. arch_spec:: Title
    :id: ASPEC_AES_001
    :status: Draft

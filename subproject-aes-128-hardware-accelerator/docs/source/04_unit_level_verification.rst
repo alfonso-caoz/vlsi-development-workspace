@@ -1,11 +1,14 @@
-================================
-Unit Level - Design Verification
-================================
+===========================
+Design Testing - Unit Level
+===========================
 
-.. _unit_verification:
+.. _dt_unit_level:
 
-This document outlines the unit-level verification plan for the AES-128 hardware accelerator IP core. 
-The unit-level verification will focus on verifying the functionality of individual modules within the design, ensuring that each module behaves as expected according to its specifications.
+This document outlines the unit-level testing plan for the AES-128 hardware accelerator IP core. 
+The unit-level tests will focus on testing the functionality of individual modules within the design, ensuring that each module behaves as expected according to its specifications.
+
+Design Testing Plan (Tplan) - Unit Level
+----------------------------------------
 
 .. unit_test:: Title
    :id: UTEST_AES_001
@@ -16,9 +19,8 @@ The unit-level verification will focus on verifying the functionality of individ
 
    TBD
 
-==========================
-Unit Test Execution Matrix
-==========================
+Design Testing Matrix
+---------------------
 
 .. needtable::
    :filter: "unit_test" in type

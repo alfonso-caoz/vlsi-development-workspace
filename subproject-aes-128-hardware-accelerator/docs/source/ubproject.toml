@@ -59,18 +59,48 @@ color = "#aa8929"
 style = "node"
 
 
-# Custom Fields
+# Custom Fields - All
 [needs.fields.status]
 description = "Current lifecycle state (Draft, Open, In_Progress, Approved, Closed)"
 default = "Draft"
+nullable = false
 
 [needs.fields.last_updated]
 description = "Last Updated REQ/SPEC/TEST Wording (YYYY-MM-DD)"
 default = "YYYY-MM-DD"
+nullable = false
 
+# Custom Fields - unit_test - uvm_test
 [needs.fields.result]
 description = "Test result (UNTESTED, PASSED, FAILED)"
-default = "UNTESTED"
+nullable = true
+schema = { type = "string", enum = ["UNTESTED", "PASSED", "FAILED"] }
+predicates = [
+  ["type in ['unit_test', 'uvm_test']", "UNTESTED"]
+]
+
+# Custom Fields - uvm_test
+[needs.fields.sv_test]
+description = "SystemVerilog Test File Name (TBD, N/A, <file_name>.sv)"
+nullable = true
+predicates = [
+  ["type in ['uvm_test']", "TBD"]
+]
+
+[needs.fields.sv_covergroup]
+description = "SystemVerilog Covergroup Name (TBD, N/A, <covergroup_name>)"
+nullable = true
+predicates = [
+  ["type in ['uvm_test']", "TBD"]
+]
+
+[needs.fields.sv_assertion]
+description = "SystemVerilog Assertion Name (TBD, N/A, <sva_name>)"
+nullable = true
+predicates = [
+  ["type in ['uvm_test']", "TBD"]
+]
+
 
 # Traceability Link Types
 [needs.links.links]

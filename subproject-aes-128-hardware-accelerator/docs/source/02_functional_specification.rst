@@ -6,6 +6,9 @@ Functional Specification (FS)
 
 This document outlines the functional specifications for the AES-128 hardware accelerator IP core.
 
+Functional Specifications
+-------------------------
+
 .. func_spec:: Title
    :id: FSPEC_AES_001
    :status: Draft

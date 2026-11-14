@@ -6,6 +6,10 @@ Product Requirements Document (PRD)
 
 This document outlines the product requirements for the AES-128 hardware accelerator IP core.
 
+
+Product Requirements
+--------------------
+
 .. req:: Title
    :id: REQ_AES_001
    :status: Draft
@@ -38,8 +42,8 @@ This document outlines the product requirements for the AES-128 hardware acceler
    The design shall target the SkyWater 130 nm open-source PDK library.
 
 
-Product Requirements Document Table
------------------------------------
+Product Requirements Table
+--------------------------
 
 .. needtable::
    :filter: "req" in type
