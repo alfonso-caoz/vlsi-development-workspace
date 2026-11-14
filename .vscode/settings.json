@@ -5,6 +5,7 @@
         "asic",
         "aspec",
         "bierner",
+        "covergroup",
         "dpkg",
         "fips",
         "fspec",
@@ -28,6 +29,7 @@
         "synthesizable",
         "testbench",
         "toctree",
+        "tplan",
         "ubcode",
         "ubproject",
         "useblocks",
@@ -36,6 +38,7 @@
         "verilator",
         "verilog",
         "vlsi",
+        "vplan",
         "xhost",
         "yahyabatulu"
     ],
