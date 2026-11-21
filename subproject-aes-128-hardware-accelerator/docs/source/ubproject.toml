@@ -19,7 +19,7 @@ dir = "."
 [needs]
 id_required = true
 id_regex = "^[A-Z]{2,5}_AES_[0-9]{3,5}$" # AES: Subproject Identifier
-build_json = true                       # Outputs needs.json into the _build directory (e.g. Required for CI/CD or External Tools)
+build_json = true                        # Outputs needs.json into the _build directory (e.g. Required for CI/CD or External Tools)
 
 
 # Requirement, Specification and Test Types
@@ -64,6 +64,7 @@ style = "node"
 description = "Current lifecycle state (Draft, Open, In_Progress, Approved, Closed)"
 default = "Draft"
 nullable = false
+schema = { type = "string", enum = ["Draft", "Open", "In_Progress", "Approved", "Closed"] }
 
 [needs.fields.last_updated]
 description = "Last Updated REQ/SPEC/TEST Wording (YYYY-MM-DD)"
