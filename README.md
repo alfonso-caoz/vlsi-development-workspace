@@ -1,6 +1,13 @@
 # Project: VLSI Development Workspace
 
+![Static Badge](https://img.shields.io/badge/eda--env%3A%20GNU%2FLinux-Ready-green)
+![Static Badge](https://img.shields.io/badge/subproject--aes128--axi--accelerator-Under%20Development-red)
+![Static Badge](https://img.shields.io/badge/Docs-Under%20Development-red)
+
 This project is a **monorepo** with different independent **VLSI** subprojects, following an **industry-like workflow**, including an **EDA Environment** for **development** and **testing**.
+
+
+- **[Project Main Documentation](https://alfonso-caoz.github.io/vlsi-development-workspace/html/index.html)**
 
 
 ## Project Management
@@ -14,7 +21,7 @@ This is the followed project management process based on **Agile/Scrum Developme
 
 ## Subprojects
 
-- [**Subproject: AES-128 Hardware Accelerator**](/subproject-aes-128-hardware-accelerator): `Ongoing`
+- [**Subproject: AES-128 Hardware Accelerator with AXI Interface**](/subproject-aes128-axi-accelerator): `Ongoing`
 
 
 ## EDA Environment

@@ -5,6 +5,7 @@ Subproject: AES-128 Hardware Accelerator
    :maxdepth: 2
    :caption: Documentation Contents:
 
+   Subproject Overview <subproject-aes128-axi-accelerator>
    Product Requirements Document <01_product_requirements_document>
    Functional Specification <02_functional_specification>
    Architectural Specification <03_architectural_specification>

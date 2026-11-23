@@ -1,8 +1,8 @@
 # docs/source/conf.py
 # Configuration file for the Sphinx documentation builder
 
-# Project Information
-project = 'Subproject: AES-128 Hardware Accelerator'
+# Subproject Information
+project = 'Subproject: AES-128 Hardware Accelerator with AXI Interface'
 author = 'Alfonso Castillo Orozco'
 release = '0.1'
 
@@ -15,8 +15,7 @@ extensions = [
 ]
 
 templates_path = ['_templates'] # Optional: Custom templates for Sphinx documentation
-exclude_patterns = [            # Optional: Exclude specific files or directories from documentation        
-    '_build',
+exclude_patterns = [            # Optional: Exclude specific files or directories from documentation
     '_includes/*'    
 ]
 
@@ -24,6 +23,6 @@ exclude_patterns = [            # Optional: Exclude specific files or directorie
 needs_from_toml = "ubproject.toml"  # Load configuration from external TOML file
 
 # HTML Output Options
-html_theme = 'sphinx_rtd_theme'         # Read the Docs Theme
-html_static_path = ['_static']          # Optional: Additional static files (e.g. CSS)
-html_css_files = ['css/custom.css']     # Optional: Additional CSS files to include in the HTML output, to customize main theme style
+html_theme = 'sphinx_rtd_theme'                     # Read the Docs Theme
+html_static_path = ['../../../docs/source/_static'] # Optional: Additional GLOBAL static files (e.g. CSS)
+html_css_files = ['css/custom.css']                 # Optional: Additional GLOBAL CSS files to include in the HTML output, to customize main theme style
