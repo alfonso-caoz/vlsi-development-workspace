@@ -1,0 +1,7 @@
+# Git Ignore
+
+# Virtual Environment Directory
+.venv/
+
+# Sphinx Documentation Build Directory
+_build/

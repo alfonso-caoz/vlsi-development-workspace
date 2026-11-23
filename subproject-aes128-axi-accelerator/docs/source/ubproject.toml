@@ -1,0 +1,129 @@
+# docs/source/ubproject.toml
+# UbprojectConfig - Sphinx-needs configuration TOML file to be added to conf.py file
+
+
+# UBProject JSON Schema
+"$schema" = "https://ubcode.useblocks.com/ubproject.schema.json"
+
+
+# Project Info
+[project]
+name = "Subproject: AES-128 Hardware Accelerator"
+description = "Subproject: AES-128 Hardware Accelerator - Requirements and Verification Documentation"
+
+[source]
+dir = "."
+
+
+# ID Generation and Format
+[needs]
+id_required = true
+id_regex = "^[A-Z]{2,5}_AES_[0-9]{3,5}$" # AES: Subproject Identifier
+build_json = true                        # Outputs needs.json into the _build directory (e.g. Required for CI/CD or External Tools)
+
+
+# Requirement, Specification and Test Types
+[[needs.types]]
+directive = "req"
+title = "Requirement"
+prefix = "REQ_AES_"
+color = "#BFD8D2"
+style = "node"
+
+[[needs.types]]
+directive = "func_spec"
+title = "Functional Specification"
+prefix = "FSPEC_AES_"
+color = "#FEDCD2"
+style = "node"
+
+[[needs.types]]
+directive = "arch_spec"
+title = "Architectural Specification"
+prefix = "ASPEC_AES_"
+color = "#DF744A"
+style = "node"
+
+[[needs.types]]
+directive = "unit_test"
+title = "Unit Test"
+prefix = "UTEST_AES_"
+color = "#DCB239"
+style = "node"
+
+[[needs.types]]
+directive = "uvm_test"
+title = "UVM Test"
+prefix = "TEST_AES_"
+color = "#aa8929"
+style = "node"
+
+
+# Custom Fields - All
+[needs.fields.status]
+description = "Current lifecycle state (Draft, Open, In_Progress, Approved, Closed)"
+default = "Draft"
+nullable = false
+schema = { type = "string", enum = ["Draft", "Open", "In_Progress", "Approved", "Closed"] }
+
+[needs.fields.last_updated]
+description = "Last Updated REQ/SPEC/TEST Wording (YYYY-MM-DD)"
+default = "YYYY-MM-DD"
+nullable = false
+
+# Custom Fields - unit_test - uvm_test
+[needs.fields.result]
+description = "Test result (UNTESTED, PASSED, FAILED)"
+nullable = true
+schema = { type = "string", enum = ["UNTESTED", "PASSED", "FAILED"] }
+predicates = [
+  ["type in ['unit_test', 'uvm_test']", "UNTESTED"]
+]
+
+# Custom Fields - uvm_test
+[needs.fields.sv_test]
+description = "SystemVerilog Test File Name (TBD, N/A, <file_name>.sv)"
+nullable = true
+predicates = [
+  ["type in ['uvm_test']", "TBD"]
+]
+
+[needs.fields.sv_covergroup]
+description = "SystemVerilog Covergroup Name (TBD, N/A, <covergroup_name>)"
+nullable = true
+predicates = [
+  ["type in ['uvm_test']", "TBD"]
+]
+
+[needs.fields.sv_assertion]
+description = "SystemVerilog Assertion Name (TBD, N/A, <sva_name>)"
+nullable = true
+predicates = [
+  ["type in ['uvm_test']", "TBD"]
+]
+
+
+# Traceability Link Types
+[needs.links.links]
+option = "links"
+incoming = "is linked by"
+outgoing = "links to"
+
+[needs.links.implements]
+option = "implements"
+incoming = "is implemented by"
+outgoing = "implements"
+style = "#00AA00"
+
+[needs.links.tests]
+option = "tests"
+incoming = "is tested by"
+outgoing = "tests"
+style = "#0000AA"
+
+
+# Custom Warnings
+[needs.warnings]
+missing_last_update = "last_updated == ''"
+# untested_req = "type == 'req' and len(tests_back) == 0"
+# unimplemented_req = "type == 'req' and len(implements_back) == 0"

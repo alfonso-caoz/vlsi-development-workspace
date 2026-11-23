@@ -49,5 +49,3 @@ This file covers each `Sprint` **high-level updates**, for more details review t
 - **What went well?**: There is a great foundation for the Project Management schema. Now there are Issues and PR's functioning templates, saving time when creating these artifacts.
 - **What went wrong?**: There was one "Unplanned Scope Injection" Issue, but it was closed within the same sprint.
 - **How I will fix it next sprint?**: After this sprint, there is a better task / story point estimation to cover the whole sprint, which will be part of a better next sprint planning.
-
----

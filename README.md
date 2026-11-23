@@ -1,6 +1,13 @@
 # Project: VLSI Development Workspace
 
+![Static Badge](https://img.shields.io/badge/eda--env%3A%20GNU%2FLinux-Ready-green)
+![Static Badge](https://img.shields.io/badge/subproject--aes128--axi--accelerator-Under%20Development-red)
+![Static Badge](https://img.shields.io/badge/Docs-Under%20Development-red)
+
 This project is a **monorepo** with different independent **VLSI** subprojects, following an **industry-like workflow**, including an **EDA Environment** for **development** and **testing**.
+
+
+- **[Project Main Documentation](https://alfonso-caoz.github.io/vlsi-development-workspace/html/index.html)**
 
 
 ## Project Management
@@ -14,7 +21,7 @@ This is the followed project management process based on **Agile/Scrum Developme
 
 ## Subprojects
 
-- [**Subproject: ASIC Design Pipeline**](/subproject-asic-design-pipeline): `Work In Progress`
+- [**Subproject: AES-128 Hardware Accelerator with AXI Interface**](/subproject-aes128-axi-accelerator): `Ongoing`
 
 
 ## EDA Environment
@@ -48,9 +55,25 @@ Clone this repository locally:
 git clone https://github.com/alfonso-caoz/vlsi-development-workspace.git
 ```
 
-There are two different ways to run this environment, **A** and **B**:
+#### Linux Host User Read/Write/Execute Permission From **`eda-env`**
 
-#### A. VS Code + Dev Container (Recommended)
+New files and folders created from the Docker root of **`eda-env`** cannot be accessed from the Linux Host user (**Linux Hosts Only**). Follow next steps to fix this:
+
+- Open a terminal and go to the cloned repository folder:
+    ```bash
+    cd vlsi-development-workspace
+    ```
+
+- Grant your Linux Host user full access to every future file/folder created by **`eda-env`** (Docker root inherits rwx for `$USER`):
+    ```bash
+    setfacl -R -d -m u:$USER:rwx .
+    ```
+
+#### Build And Run The **`eda-env`**
+
+There are two different ways to build and run this environment, **A** and **B**:
+
+##### A. VS Code + Dev Container (Recommended)
 
 - Open **VS Code**
 - Click on: `File` / `Open Folder` / `vlsi-development-workspace` (this cloned repository)
@@ -61,7 +84,7 @@ There are two different ways to run this environment, **A** and **B**:
 - Close VS Code to close the container.
 - Reopen VS Code to resume your work in the container (seconds, because the image is already built).
 
-#### B. Terminal (Optional)
+##### B. Terminal (Optional)
 
 - Open a terminal and go to the cloned repository folder:
     ```bash
