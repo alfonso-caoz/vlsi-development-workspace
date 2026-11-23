@@ -20,8 +20,8 @@ vlsi-development-workspace/
 │   ├── rulesets/                               # Reference: Folder with rulesets
 │   └── labels.yaml                             # Reference: Project labels
 ├── .vscode/                                    # Folder with VS Code configurations
-├── docs/                                       # Folder with Project Management documents
-├── subproject-aes-128-hardware-accelerator/    # Subproject: AES-128 Hardware Accelerator
+├── docs/                                       # Folder with Project and Subprojects documents
+├── subproject-aes128-axi-accelerator/          # Subproject: AES-128 Hardware Accelerator with AXI Interface
 ├── CHANGELOG.md
 └── README.md
 ```
@@ -175,6 +175,18 @@ A reviewed PR will be merged to `main` branch, using the PR title as the last `s
 - \[BUG\]: `fix: #<issue-number> <issue-name>`
 - \[DOCS\]: `docs: #<issue-number> <issue-name>`
 - \[CONFIG\]: `config: #<issue-number> <issue-name>`
+
+## Documentation
+
+Create the local static HTML documentation by running the command from folder `vlsi-development-workspace`:
+
+```bash
+./docs/build.sh
+```
+
+Then upload to the repo the updated folder `.docs/html`, Project and Subprojects documentation. The repository is configured for Github to deploy it in **Pages** (Configuration, Pages, deploy from branch, select the branch (main or another branch), from folder /docs).
+
+- [Documentation](https://alfonso-caoz.github.io/vlsi-development-workspace/html/index.html)
 
 ## Changelog
 
