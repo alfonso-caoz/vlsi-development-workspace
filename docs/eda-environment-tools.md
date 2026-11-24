@@ -30,6 +30,7 @@ These are the **pinned System Tools** inside the **`eda-env`** at this moment to
 | [setuptools](https://setuptools.pypa.io/en/latest/) | [GitHub](https://github.com/pypa/setuptools) | [`84.0.0`](https://pypi.org/project/setuptools/84.0.0/) | PyPI | LibreLane Dependency |
 | [wheel](https://wheel.readthedocs.io/en/stable/) | [GitHub](https://github.com/pypa/wheel) | [`0.48.0`](https://pypi.org/project/wheel/0.48.0/) | PyPI | LibreLane Dependency |
 | [<sup>*</sup>](#table-note-1) [LibreLane](https://librelane.readthedocs.io/en/stable/) | [GitHub](https://github.com/librelane/librelane) | [`3.0.11`](https://pypi.org/project/librelane/3.0.11/) | PyPI | RTL-to-GDSII Tool, successor to [OpenLane](https://github.com/The-OpenROAD-Project/openlane) |
+| Documentation Requirements | [PyPI](https://pypi.org/) | [requirements.txt](https://github.com/alfonso-caoz/vlsi-development-workspace/blob/main/docs/requirements.txt) | PyPI | Python Packages To Create Documentation |
 
 </div>
 
