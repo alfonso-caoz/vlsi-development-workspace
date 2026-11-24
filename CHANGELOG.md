@@ -7,6 +7,36 @@ This file covers each `Sprint` **high-level updates**, for more details review t
 
 ---
 
+## [Sprint 3 - Milestone: "Subproject: AES-128 Hardware Accelerator with AXI Interface"] - 11-24-2026
+
+> [!IMPORTANT]
+> **Milestone** name changed from *"Subproject: ASIC Design Pipeline"* to **"Subproject: AES-128 Hardware Accelerator with AXI Interface"**
+
+### 🎯 Subproject Objectives
+
+- **Objective 1**: Initial Product Definition and Architecture ([#22](https://github.com/alfonso-caoz/vlsi-development-workspace/issues/22)).
+- **Objective 2**: Sprint 3: Summary & Retrospective ([#21](https://github.com/alfonso-caoz/vlsi-development-workspace/issues/21)).
+
+### 📈 Sprint Performance & Metrics
+
+-   **Project Management and Agile Velocity**: 
+    -   **Story Points (SP)**: 7 / 7 SP Completed (100% Predictability).
+    -   **Task Completion**: 2 / 2 Issues Closed (100% Scope Delivery).
+    -   **Epic Contribution**: Epic Issue: [#5](https://github.com/alfonso-caoz/vlsi-development-workspace/issues/5) and [#3](https://github.com/alfonso-caoz/vlsi-development-workspace/issues/3).
+    -   **Unplanned Scope Injection**: No.
+-   **EDA Environment**: 
+    - **EDA Tool Additions**: Pinned VS Code Extension ubCode for system requirements support. Bash script to build locally the HTML documentation with pinned python packages sphinx, sphinx-rtd-theme, sphinx-needs, sphinxcontrib-plantuml, and myst-parser within a venv. That [HTML](https://alfonso-caoz.github.io/vlsi-development-workspace/html/index.html) output is deployed by GitHub Pages.
+    - **Environment Permissions**: Linux Host User Read/Write/Execute Permission From eda-env ([see docs](https://alfonso-caoz.github.io/vlsi-development-workspace/html/project-vlsi-development-workspace.html#linux-host-user-read-write-execute-permission-from-eda-env)).
+    - **Pinned Tools (PT) Update**: 51 / 53 Tools Pinned (96% PT). System tools: 36, VS Code extensions: 17. Just  2 system tools not pinned because it requires latest to use web addresses: ca-certificate and curl. Low probability to break a tool. Additionally, these documentation requirements within a venv: [requirements.txt](https://github.com/alfonso-caoz/vlsi-development-workspace/blob/0d2e0e23c87d396aca3c1c1e2bbc4988ceacb5b0/docs/requirements.txt)
+
+### 🔄 Sprint Retrospective & Self-Correction
+
+- **What went well?**: Proposed product to be developed, requirements and documentation schema, and extra tools for development.
+- **What went wrong?**: Two extra days were needed beyond the usual 2-week sprint, due to other personal tasks that popped up.
+- **How I will fix it next sprint?**: Planning the sprint with a margin of one or two days (within the 2-week sprint), in case of a task takes longer (e.g., bugs, blockers, others).
+
+---
+
 ## [Sprint 2 - Milestone: "Subproject: ASIC Design Pipeline"] - 08-28-2026
 
 ### 🎯 Sprint Objectives
